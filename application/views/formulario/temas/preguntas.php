@@ -67,12 +67,7 @@ $preguntas =  $this->configuracion_model->obtener('temas_preguntas', ['tema_id' 
 		
 		if(respuestasSeleccionadas) {
             if(posicionActual < 5) location.assign(`<?php echo site_url('formulario/preguntas'); ?>/${<?php echo $id_encuesta; ?>}/${posicionActual+1}`)
-
-            if(posicionActual == 5) {
-                mostrarNotificacion('exito', `Muchas gracias por participar de la encuesta!`, 10000)
-                $('.container').html('')
-			    return false
-            }
+            if(posicionActual == 5) location.assign(`<?php echo site_url('formulario/fin'); ?>`)
         }
 	}
 </script>
