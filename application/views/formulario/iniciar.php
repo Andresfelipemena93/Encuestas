@@ -42,9 +42,12 @@
 					</select>
 				</div>
 
-				<div class="form-group d-flex flex-column mx-auto filtros_text">
-					<label for="edad">Edad</label>
-					<input type="number" id="edad" class="form-control">
+				<div class="form-group d-flex flex-column mx-auto  filtros_text">
+					<label for="edad">Rango de edad</label>
+					<select id="edad" class="form-control" >
+						<option disabled selected value>Seleccione</option>
+						<?php foreach($this->configuracion_model->obtener('rangos_edades') as $rango_edad) echo "<option value='$rango_edad->id'>$rango_edad->nombre</option>"; ?>
+					</select>
 				</div>
 
 				<div class="from-group btn-encuesta-start">
@@ -66,7 +69,7 @@
 			let escolaridadId = $('#escolaridad')
 			let generoId = $('#genero')
 			let barrioId = $('#barrio')
-			let edad = $('#edad')
+			let edadId = $('#edad')
 
 			let campos = [
 				nombres,
@@ -82,7 +85,7 @@
 			let datos = {
 				tipo: 'encuestas',
 				nombres: nombres.val(),
-				edad: edad.val(),
+				edad_rango_id: edadId.val(),
 				barrio_id: barrioId.val(),
 				genero_id: generoId.val(),
 				escolaridad_id: escolaridadId.val(),
