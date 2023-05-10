@@ -8,7 +8,10 @@
 					ENCUESTA DE PERCEPCIÓN TERRITORIAL. <br> SOPETRÁN - ANTIOQUIA.
 				</h4>
 				<span class="descripcion-encuesta">
-					La siguiente encuesta tiene como objetivo establecer un diagnóstico barrial y veredal en el Municipio de SOPETRÁN - ANTIOQUIA de las diferentes problemáticas que aquejan a los habitantes del territorio, para buscar soluciones que se conviertan en políticas públicas en el programa de Gobierno.
+					La siguiente encuesta tiene como objetivo establecer un diagnóstico barrial 
+					y veredal en el Municipio de SOPETRÁN - ANTIOQUIA de las diferentes 
+					problemáticas que aquejan a los habitantes del territorio, para 
+					buscar soluciones que se conviertan en políticas públicas en el programa de Gobierno.
 				</span>
 				<br><br>
 			</div>
@@ -42,14 +45,25 @@
 					</select>
 				</div>
 
+		
+
 				<div class="form-group d-flex flex-column mx-auto filtros_text">
 					<label for="edad">Edad</label>
 					<input type="number" id="edad" class="form-control">
+				</div>
+				<div class="form-group d-flex flex-column mx-auto filtros_text">
+					<label for="edad">Teléfono</label>
+					<input type="number" id="telefono" class="form-control">
 				</div>
 
 				<div class="from-group btn-encuesta-start">
 					<input type="submit" class="btn btn-primary btn-encuesta" value="Iniciar la encuesta">
 				</div>
+				<br>
+				<div class="check mx-auto filtros_text">
+					<input type="checkbox" id="cbox2" value="second_checkbox" require> <a for="cbox2" class="tyc" href="#">Acepto términos y condiciones</a>
+				</div>
+				
 
 				<img src="/img/login.jpg" alt="">
 			</form>

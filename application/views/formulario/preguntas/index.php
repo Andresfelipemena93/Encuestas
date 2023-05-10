@@ -8,7 +8,7 @@
 
 				<p id="description" class="description text-center">
 					<strong>
-						Por favor sólo selecciona 5 temas de los cuales te gustaría responder la encuesta
+					Del siguiente listado de temas seleccione a su criterio los 5 temas de mayor interes para un mejor funcionamiento de nuestro municipio
 					</strong>
 				</p>
 			</header>
@@ -16,7 +16,7 @@
 			<div class="form-group survey-form">
 				<p>
 					¿Qué le gustaría ver mejorado?
-					<span class="clue">(Marque todo lo que corresponda)</span>
+					<span class="clue">(Marque sólo 5 temas)</span>
 				</p>
 
 				<?php foreach($this->configuracion_model->obtener('temas') as $tema) { ?>

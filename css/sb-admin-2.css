@@ -307,6 +307,19 @@ input {
   flex-basis: auto;
   justify-content: flex-end;
 }
+.check {
+  display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.tyc {
+  align-items: center;
+  margin-left: 5px;
+  color: #bf000c;
+}
 
 /* encuesta 2 ***********************  */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap");
