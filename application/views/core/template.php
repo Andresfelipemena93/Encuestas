@@ -16,14 +16,14 @@
 
                         <?php $this->load->view($contenido_principal); ?>
                     </div>
-
-                    <?php $this->load->view('core/footer'); ?>
                 </div>
             </div>
         <?php } else { ?>
             <?php $this->load->view($contenido_principal); ?>
         <?php } ?>
 
+        <?php $this->load->view('core/footer'); ?>
+        
         <!-- Custom scripts for all pages-->
         <script src="<?php echo base_url(); ?>js/sb-admin-2.min.js"></script>
 

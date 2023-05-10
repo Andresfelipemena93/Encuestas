@@ -31,6 +31,13 @@ class Formulario extends CI_Controller {
         $this->data['contenido_principal'] = 'formulario/temas/preguntas';
         $this->load->view('core/template', $this->data);
 	}
+
+    public function fin()
+	{
+		$this->data['titulo'] = 'Gracias';
+        $this->data['contenido_principal'] = 'formulario/fin';
+        $this->load->view('core/template', $this->data);
+	}
 }
 /* Fin del archivo Formulario.php */
 /* Ubicación: ./application/controllers/Formulario.php */
