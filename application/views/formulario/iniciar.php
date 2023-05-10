@@ -89,9 +89,8 @@
 			}
 			
 			let encuesta = await promesa("<?php echo site_url('encuestas/crear'); ?>", datos)
-			console.log(encuesta)
 			
-			location.assign(`<?php echo site_url('formulario/preguntas'); ?>/${encuesta.resultado}`)
+			location.assign(`<?php echo site_url('formulario/temas'); ?>/${encuesta.resultado}`)
 		})
 	})
 </script>
