@@ -19,7 +19,7 @@ $preguntas =  $this->configuracion_model->obtener('temas_preguntas', ['tema_id' 
 
 				<p id="description" class="description text-center">
 					<strong>
-						Por favor sólo selecciona <?php echo $tema->limite; ?> temas de los cuales te gustaría responder la encuesta
+                        ¿Qué cree usted que debamos mejorar en <?php echo $tema->nombre; ?>? Seleccione a su criterio, los <?php echo $tema->limite; ?> de mayor interés, seleccionando en orden de importancia.
 					</strong>
 				</p>
 			</header>
