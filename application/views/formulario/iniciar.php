@@ -94,6 +94,11 @@
 				return false
 			}
 
+			if(localStorage.sopetran_encuestaId) {
+				mostrarNotificacion('alerta', 'Lo sentimos, solamente puede llenar una encuesta.')
+				return false
+			}
+
 			let datos = {
 				tipo: 'encuestas',
 				nombres: nombres.val(),
@@ -104,6 +109,8 @@
 			}
 			
 			let encuesta = await promesa("<?php echo site_url('encuestas/crear'); ?>", datos)
+
+			localStorage.sopetran_encuestaId = encuesta.resultado
 			
 			location.assign(`<?php echo site_url('formulario/temas'); ?>/${encuesta.resultado}`)
 		})
