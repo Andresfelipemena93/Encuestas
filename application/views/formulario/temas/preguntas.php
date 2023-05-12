@@ -19,16 +19,16 @@ $preguntas =  $this->configuracion_model->obtener('temas_preguntas', ['tema_id' 
 
 				<p id="description" class="description text-center">
 					<strong>
-                        ¿Qué cree usted que debamos mejorar en <?php echo $tema->nombre; ?>? Seleccione a su criterio, los <?php echo $tema->limite; ?> de mayor interés, seleccionando en orden de importancia.
+                        ¿Qué cree usted que debamos mejorar en <?php echo $tema->nombre; ?>? Seleccione a su criterio, los <?php echo $tema->limite; ?> de mayor interés.
 					</strong>
 				</p>
 			</header>
 
 			<div class="form-group survey-form">
-				<p>
+				<!-- <p>
 					¿Qué le gustaría ver mejorado?
 					<span class="clue">(Marque todo lo que corresponda)</span>
-				</p>
+				</p> -->
 
 				<?php foreach($preguntas as $pregunta) { ?>
 					<label>
@@ -38,7 +38,7 @@ $preguntas =  $this->configuracion_model->obtener('temas_preguntas', ['tema_id' 
 	        </div>
 			<div class="form-group">
             	<button type="submit" id="submit" class="submit-button"  onClick="javascript:siguientePregunta(<?php echo $registro->posicion; ?>)">
-               		<strong class="text-send">Continuar a la siguiente pregunta</strong>
+               		<strong class="text-send">Continuar</strong>
             	</button>
           	</div>
 		</div>

@@ -22,6 +22,11 @@ Atentamente,  <br> <br></span>
 <h4 class="candidato">Yeison Estiven Paniagua</h4>
 
                                 </div>
+                                <div class="btnFinalizar">
+                                    <a href="https://equiposopetran.com/"><button type="button" class="btn btn-danger">Terminar</button></a>
+                                
+                                </div>
+                                
                                
                             </div>
                         </div>
