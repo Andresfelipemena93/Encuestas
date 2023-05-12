@@ -13,7 +13,7 @@ class Inicio extends CI_Controller {
     
     public function index()
 	{
-		$this->data['titulo'] = 'Formulario';
+		$this->data['titulo'] = 'Admin';
         $this->data['contenido_principal'] = 'inicio/index';
         $this->load->view('core/template', $this->data);
 	}

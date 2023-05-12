@@ -90,6 +90,14 @@
 		let sesion = await promesa("<?php echo site_url('sesion/iniciar'); ?>", {id: usuario.id})
 		
 		// Si tuvo éxito, se redirecciona
-		if(sesion) location.href = '<?php echo site_url(); ?>'
+		if(sesion) location.href = '<?php echo site_url('inicio'); ?>'
 	}
+
+    $().ready(() => {
+        $('form').on('submit', event => {
+			// event.preventDefault()
+			
+            // validarSesion()
+        })
+    })
 </script>
