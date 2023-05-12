@@ -47,9 +47,9 @@
     </div>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo site_url('encuestas/lista'); ?>">
             <i class="fas fa-fw fa-table"></i>
-            <span>Usuarios</span>
+            <span>Encuestas</span>
         </a>
     </li>
 
