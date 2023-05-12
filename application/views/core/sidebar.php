@@ -21,26 +21,28 @@
         Filtros
     </div>
 
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Filtros</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <!-- <h6 class="collapse-header">Edad</h6> -->
-                <a class="collapse-item" href="buttons.html">Escolaridad</a>
-                <a class="collapse-item" href="buttons.html">Edad</a>
-                <a class="collapse-item" href="cards.html">Género</a>
-                <!-- <h6 class="collapse-header"></h6> -->
-                <a class="collapse-item" href="buttons.html">Barrio o Vereda</a>
-            
+    <?php if(ENVIRONMENT == 'development') { ?>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Filtros</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <!-- <h6 class="collapse-header">Edad</h6> -->
+                    <a class="collapse-item" href="buttons.html">Escolaridad</a>
+                    <a class="collapse-item" href="buttons.html">Edad</a>
+                    <a class="collapse-item" href="cards.html">Género</a>
+                    <!-- <h6 class="collapse-header"></h6> -->
+                    <a class="collapse-item" href="buttons.html">Barrio o Vereda</a>
+                
+                </div>
             </div>
-        </div>
-    </li>
+        </li>
 
-    <hr class="sidebar-divider">
+        <hr class="sidebar-divider">
+    <?php } ?>
 
     <div class="sidebar-heading">
         Ajustes
