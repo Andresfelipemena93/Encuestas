@@ -82,6 +82,7 @@
 			let generoId = $('#genero')
 			let barrioId = $('#barrio')
 			let edadId = $('#edad')
+			let telefono = $('#telefono')
 
 			let campos = [
 				nombres,
@@ -106,6 +107,7 @@
 				barrio_id: barrioId.val(),
 				genero_id: generoId.val(),
 				escolaridad_id: escolaridadId.val(),
+				telefono: telefono.val(),
 			}
 			
 			let encuesta = await promesa("<?php echo site_url('encuestas/crear'); ?>", datos)
