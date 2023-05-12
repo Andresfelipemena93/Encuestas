@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-md-4">
                 <h5>Contacto</h5>
-                <p class="mb-0">equiposopetran@gmail.com</p>
+                <p class="mb-0">amigos@equiposopetran.com</p>
                 <p>314 587 2215</p>
             </div>
             <div class="col-md-4">
@@ -17,9 +17,9 @@
             <div class="col-md-4">
                 <h5>Síguenos</h5>
                 <ul class="list-unstyled">
-                    <li><a class="lista_footer" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a class="lista_footer" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a class="lista_footer" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a class="lista_footer" href="https://www.facebook.com/YeisonPaniagua2023"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a class="lista_footer" href="https://twitter.com/YEPaniagua"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a class="lista_footer" href="https://instagram.com/yeisonpaniagua2024?igshid=NTc4MTIwNjQ2YQ=="><i class="fab fa-instagram"></i> Instagram</a></li>
                 </ul>
             </div>
         </div>

@@ -66,7 +66,7 @@
 				</div>
 				
 
-				<img src="/img/login.jpg" alt="">
+				<!-- <img src="/img/login.jpg" alt=""> -->
 			</form>
     	</div>
   	</div>
