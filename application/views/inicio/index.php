@@ -92,8 +92,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-    <?php } ?>
+        <?php } ?>
+    </div>
 
     <div class="row">
         <div class="col-xl-6 col-lg-6">
