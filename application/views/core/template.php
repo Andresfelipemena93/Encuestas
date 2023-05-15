@@ -4,6 +4,8 @@
         <?php $this->load->view('core/header'); ?>
     </head>
 
+    <input type="hidden" id="site_url" value="<?php echo site_url(); ?>">
+
     <body id="<?php if(!$this->session->userdata('usuario_id')) echo 'page-top'; ?>" class="<?php if(!$this->session->userdata('usuario_id')) echo 'bg-gradient-primary'; ?>">
         <?php if($this->session->userdata('usuario_id')) { ?>
             <div id="wrapper">
@@ -33,5 +35,6 @@
         <!-- Page level custom scripts -->
         <script src="<?php echo base_url(); ?>js/demo/chart-area-demo.js"></script>
         <script src="<?php echo base_url(); ?>js/demo/chart-pie-demo.js"></script>
+        <script src="<?php echo base_url(); ?>js/demo/chart-bar-demo.js?<?php echo date('Ymdhis'); ?>"></script>
     </body>
 </html>

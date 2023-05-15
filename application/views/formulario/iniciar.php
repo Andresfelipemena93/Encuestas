@@ -82,6 +82,7 @@
 			let generoId = $('#genero')
 			let barrioId = $('#barrio')
 			let edadId = $('#edad')
+			let telefono = $('#telefono')
 
 			let campos = [
 				nombres,
@@ -94,6 +95,11 @@
 				return false
 			}
 
+			if(localStorage.sopetran_encuestaId) {
+				mostrarNotificacion('alerta', 'Lo sentimos, solamente puede llenar una encuesta.')
+				return false
+			}
+
 			let datos = {
 				tipo: 'encuestas',
 				nombres: nombres.val(),
@@ -101,9 +107,12 @@
 				barrio_id: barrioId.val(),
 				genero_id: generoId.val(),
 				escolaridad_id: escolaridadId.val(),
+				telefono: telefono.val(),
 			}
 			
 			let encuesta = await promesa("<?php echo site_url('encuestas/crear'); ?>", datos)
+
+			localStorage.sopetran_encuestaId = encuesta.resultado
 			
 			location.assign(`<?php echo site_url('formulario/temas'); ?>/${encuesta.resultado}`)
 		})

@@ -1,5 +1,5 @@
 <ul class="navbar-nav bg-color-navbar_slider sidebar sidebar-dark accordion" id="accordionSidebar">
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo site_url(); ?>">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?php echo site_url('inicio'); ?>">
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-laugh-wink"></i>
         </div>
@@ -9,7 +9,7 @@
     <hr class="sidebar-divider my-0">
 
     <li class="nav-item active">
-        <a class="nav-link" href="<?php echo site_url(); ?>">
+        <a class="nav-link" href="<?php echo site_url('inicio'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Datos generales</span>
         </a>
@@ -21,35 +21,37 @@
         Filtros
     </div>
 
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
-            aria-expanded="true" aria-controls="collapseTwo">
-            <i class="fas fa-fw fa-cog"></i>
-            <span>Filtros</span>
-        </a>
-        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <!-- <h6 class="collapse-header">Edad</h6> -->
-                <a class="collapse-item" href="buttons.html">Escolaridad</a>
-                <a class="collapse-item" href="buttons.html">Edad</a>
-                <a class="collapse-item" href="cards.html">Género</a>
-                <!-- <h6 class="collapse-header"></h6> -->
-                <a class="collapse-item" href="buttons.html">Barrio o Vereda</a>
-            
+    <?php if(ENVIRONMENT == 'development') { ?>
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                aria-expanded="true" aria-controls="collapseTwo">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>Filtros</span>
+            </a>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <!-- <h6 class="collapse-header">Edad</h6> -->
+                    <a class="collapse-item" href="buttons.html">Escolaridad</a>
+                    <a class="collapse-item" href="buttons.html">Edad</a>
+                    <a class="collapse-item" href="cards.html">Género</a>
+                    <!-- <h6 class="collapse-header"></h6> -->
+                    <a class="collapse-item" href="buttons.html">Barrio o Vereda</a>
+                
+                </div>
             </div>
-        </div>
-    </li>
+        </li>
 
-    <hr class="sidebar-divider">
+        <hr class="sidebar-divider">
+    <?php } ?>
 
     <div class="sidebar-heading">
         Ajustes
     </div>
 
     <li class="nav-item">
-        <a class="nav-link" href="tables.html">
+        <a class="nav-link" href="<?php echo site_url('encuestas/lista'); ?>">
             <i class="fas fa-fw fa-table"></i>
-            <span>Usuarios</span>
+            <span>Encuestas</span>
         </a>
     </li>
 

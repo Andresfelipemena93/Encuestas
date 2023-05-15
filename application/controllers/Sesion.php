@@ -17,6 +17,12 @@ class Sesion extends CI_Controller {
         $this->load->view('core/template', $this->data);
 	}
 
+    function cargar_respuestas()
+	{
+        $this->data['id_tema'] = $this->input->post('id_tema');
+        $this->load->view('inicio/respuestas', $this->data);
+	}
+
     function cerrar()
 	{
         $this->session->sess_destroy();
@@ -58,6 +64,22 @@ class Sesion extends CI_Controller {
                 $clave = sha1($datos['clave']);
 
                 $resultado = $this->sesion_model->obtener('usuario', ['login' => $nombre_usuario, 'clave' => $clave]);
+            break;
+
+            case 'barrios':
+                $resultado = $this->configuracion_model->obtener('barrios');
+            break;
+
+            case 'escolaridades':
+                $resultado = $this->configuracion_model->obtener('escolaridades');
+            break;
+
+            case 'generos':
+                $resultado = $this->configuracion_model->obtener('generos');
+            break;
+
+            case 'rangos_edades':
+                $resultado = $this->configuracion_model->obtener('rangos_edades');
             break;
         }
 
