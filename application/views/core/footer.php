@@ -10,7 +10,7 @@
                 <h5>Enlaces útiles</h5>
                 <ul class="list-unstyled">
                     <li><a class="lista_footer" href="#">Preguntas frecuentes</a></li>
-                    <li><a class="lista_footer" href="#">Política de privacidad</a></li>
+                    <li><a class="lista_footer" href="<?php echo site_url('terminos'); ?>">Política de privacidad</a></li>
                     <li><a class="lista_footer" href="#">Términos de uso</a></li>
                 </ul>
             </div>
